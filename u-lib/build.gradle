@@ -37,7 +37,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                components.getByName('release')
+                from components.release
                 groupId = "com.github.yanglilizhang"
                 artifactId = "cv-sdk"
                 version = "1.0.1"
