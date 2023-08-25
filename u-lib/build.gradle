@@ -41,7 +41,8 @@ afterEvaluate {
                 groupId = "com.github.yanglilizhang"
                 artifactId = "cv-sdk"
                 version = "1.0.1"
-                
+
+
             }
         }
     }
