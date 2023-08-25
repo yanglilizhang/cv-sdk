@@ -1,4 +1,4 @@
-package com.sdk.cv
+package com.sdk.utils
 
 object QUtils {
 
