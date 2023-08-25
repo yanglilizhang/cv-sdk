@@ -36,11 +36,12 @@ android {
 afterEvaluate {
     publishing {
         publications {
-            debug(MavenPublication) {
-                components.getByName('debug')
+            release(MavenPublication) {
+                components.getByName('release')
                 groupId = "com.github.yanglilizhang"
-                artifactId = "u-lib"
+                artifactId = "cv-sdk"
                 version = "1.0.1"
+                
             }
         }
     }
