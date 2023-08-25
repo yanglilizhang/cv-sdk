@@ -36,8 +36,8 @@ android {
 afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
-//                from components.release
+            debug(MavenPublication) {
+                components.getByName('debug')
                 groupId = "com.github.yanglilizhang"
                 artifactId = "u-lib"
                 version = "1.0.1"
