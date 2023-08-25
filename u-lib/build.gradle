@@ -32,7 +32,7 @@ android {
     }
 }
 
-
+//https://stackoverflow.com/questions/71365373/software-components-will-not-be-created-automatically-for-maven-publishing-from
 afterEvaluate {
     publishing {
         publications {
