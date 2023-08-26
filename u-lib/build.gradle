@@ -40,17 +40,18 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = "com.github.yanglilizhang"
+                groupId = "com.github.uc"
                 artifactId = "cv-sdk"
-                version = "1.0.1"
+                version = "1.0.1" //实际不使用这个版本号
             }
-            debug(MavenPublication) {
-                components.getByName('debug')
-
-                groupId = 'com.github.yanglilizhang'
-                artifactId = 'dev-sdk'
-                version = 'v1.0.1'
-            }
+            //jetpack会有两个包，只需要一个即可
+//            debug(MavenPublication) {
+//                components.getByName('debug')
+//
+//                groupId = 'com.github.yanglilizhang'
+//                artifactId = 'dev-sdk'
+//                version = 'v1.0.1'
+//            }
         }
     }
 }
