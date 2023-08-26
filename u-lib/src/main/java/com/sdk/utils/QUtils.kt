@@ -3,5 +3,5 @@ package com.sdk.utils
 object QUtils {
 
 
-    fun getVersion() = "1.0.1"
+    fun getVersion() = "1.0.6"
 }
