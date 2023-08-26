@@ -33,7 +33,8 @@ android {
 }
 
 //https://stackoverflow.com/questions/71365373/software-components-will-not-be-created-automatically-for-maven-publishing-from
-
+//https://developer.android.com/studio/build/maven-publish-plugin?hl=zh-cn#groovy
+//https://docs.gradle.org/7.3/userguide/userguide.html
 afterEvaluate {
     publishing {
         publications {
