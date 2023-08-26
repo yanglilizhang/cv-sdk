@@ -33,16 +33,23 @@ android {
 }
 
 //https://stackoverflow.com/questions/71365373/software-components-will-not-be-created-automatically-for-maven-publishing-from
+
 afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
                 from components.release
+
                 groupId = "com.github.yanglilizhang"
                 artifactId = "cv-sdk"
                 version = "1.0.1"
+            }
+            debug(MavenPublication) {
+                components.getByName('debug')
 
-
+                groupId = 'com.github.yanglilizhang'
+                artifactId = 'dev-sdk'
+                version = 'v1.0.1'
             }
         }
     }
